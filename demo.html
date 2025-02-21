@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text on Image</title>
+    <style>
+        .image-container {
+            position: relative; /* Enables positioning of text over the image */
+            width: 100%; /* Adjust width as needed */
+            max-width: 600px; /* Optional: Limit maximum width */
+        }
+
+        .image-container img {
+            width: 100%; /* Ensures image takes the full width of the container */
+            height: auto; /* Maintains aspect ratio */
+        }
+
+        .image-container .text-overlay {
+            position: absolute; /* Positions the text relative to the container */
+            top: 50%; /* Moves the text to the vertical center */
+            left: 50%; /* Moves the text to the horizontal center */
+            transform: translate(-50%, -50%); /* Centers the text */
+            color: white; /* Text color */
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 10px 20px; /* Adds some padding */
+            font-size: 1.5rem; /* Adjust font size */
+            text-align: center; /* Aligns text */
+            border-radius: 8px; /* Optional: Rounds the corners of the background */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="/images/Passportphoto.jpg" alt="Sample Image">
+        <div class="text-overlay">This is text on the image</div>
+    </div>
+</body>
+</html>
