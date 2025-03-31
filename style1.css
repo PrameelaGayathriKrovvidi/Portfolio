@@ -9,7 +9,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family:cursive;
+    font-family:sans-serif;
     text-transform: uppercase;
     text-decoration: wavy;
     background-color: #5ed3d3;
